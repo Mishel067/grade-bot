@@ -1,38 +1,42 @@
-# grade-bot
-Telegram bot for tracking school grades - built by a 12-years-old developer
-[README.md](https://github.com/user-attachments/files/25607780/README.md)
-# GradeBot 📊
+# GradeBot
 
-A simple Telegram bot for trackind school grades - built by a 6th grader.
-No fluff. Just works.
+A Telegram bot for tracking school grades with statistics, graphs, and data export.
 
-## Features
-- `/add <subject> <grade>` - add one or multiple grades
-  Example: 1/add math 5` or `/add russian 4 5 3`
-- `/stats` - shows average per subject + helpful tips
-- `/export` - downloads your grades as CSV
-- Smart validation:
-  - Only grades 1-5 accepted
-  - Only real subjects (e.g. `math`, `physics`) - no `chips` or `cat`
-  - Private: each user sees only their own data
+Built with Python, SQLite, and Matplotlib.
 
-## How to Run
-1. Install Python 3.8+
-2. Run:
+## ✨ Features
+- `/add subject grade1 grade2 ...` — add grades
+- `/stats` — view average scores by subject
+- `/graph` — visualize your progress over time
+- `/export` — download all data as CSV
 
+All data is stored locally in an SQLite database and persists between restarts.
+
+## 📸 Screenshots
+
+![Adding grades](screenshots/gradebot_add.png)
+![Statistics](screenshots/gradebot_stats.png)
+![Progress graph](screenshots/gradebot_graph.png)
+
+## 🛠️ Tech Stack
+- Python 3
+- `telebot` (pyTelegramBotAPI)
+- `sqlite3`
+- `matplotlib`
+
+
+## 🚀 How to Run
+1. Get a bot token from [@BotFather](https://t.me/BotFather)
+2. Set it in `YOUR_TOKEN_HERE` in the code
+3. Install dependencies:
 ```bash
-   pip install pyTelegramBotAPI
-3. Create a bot via @BotFather
-4. Paste your token into `gradebot.py`:
-`TOKEN = 'YOUR_TOKEN_HERE'
+pip install pyTelegramBotAPI matplotlib pandas
+```
+4. Run:
+```bash
+python gradebot.py
+```
 
-5. Run `python gradebot.py`
-> Works in Google Colab - but for 24/7 use, run on your PC or a cheap VPS.
-## Privacy
-Grades are storedper `chat_id` - no sharing,
-no leaks.
-
-## Made by
-Misha, 6t grade, Vladimir
-"I built it myself. And it works."
+Made by Misha • Vladimir, Russia
+```
 
