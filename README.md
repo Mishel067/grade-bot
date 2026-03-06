@@ -17,6 +17,9 @@ All data is stored locally in an SQLite database and persists between restarts.
 ![Adding grades](screenshots/gradebot_add.png)
 ![Statistics](screenshots/gradebot_stats.png)
 ![Progress graph](screenshots/gradebot_graph.png)
+![export](screenshots/gradebot_export.png)
+![start message](screenshots/gradebot_start.png)
+![help](screenshots/gradebot_help.png)
 
 ## 🛠️ Tech Stack
 - Python 3
