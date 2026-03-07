@@ -20,7 +20,7 @@ All data is stored locally in an SQLite database and persists between restarts.
 ![export](screenshots/gradebot_export.png)
 ![start message](screenshots/gradebot_start.png)
 ![help](screenshots/gradebot_help.png)
-
+![import](screenshots/gradebot2.0_import.png)
 ## 🛠️ Tech Stack
 - Python 3
 - `telebot` (pyTelegramBotAPI)
